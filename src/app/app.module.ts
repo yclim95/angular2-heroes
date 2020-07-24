@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
     AppComponent,
     HeroesComponent,
     MessagesComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
