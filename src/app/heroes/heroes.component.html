@@ -1,0 +1,28 @@
+
+<h2>One-way data-binding</h2>
+<p>{{hero.id}}</p>
+<p>{{hero.name}}</p>
+
+<h2>Two-way data-binding</h2>
+<div>
+  <label>name:
+    <input [(ngModel)]="hero.name" placeholder="name"/>
+  </label>
+</div>
+
+<h2>My Heroes &ngFor</h2>
+<ul class="heroes">
+  <li *ngFor = "let hero of heroes">
+    <span class="badge">{{hero.id}}</span> {{hero.name | uppercase}}
+  </li>
+</ul>
+
+
+<h2>Click event binding</h2>
+  <ul class="heroes">
+    <li *ngFor="let hero of heroes"
+  [class.selected]="hero === selectedHero"
+  (click)="onSelect(hero)">
+  <span class="badge">{{hero.id}}</span> {{hero.name}}
+</li>
+  </ul>
