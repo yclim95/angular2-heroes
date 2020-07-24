@@ -20,6 +20,6 @@ import { MessagesComponent } from './messages/messages.component';
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent, HeroesComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
